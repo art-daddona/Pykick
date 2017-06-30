@@ -1,0 +1,11 @@
+parameters:
+  system_name: "test_svr-68"
+  image: "e3f77158-c626-4f61-8d3c-4c734baa2ece"
+  flavor: "ARTTEST"
+  management_network: "e3f77158-c626-4f61-8d3c-4c734baa2ece"
+  management_ip: "172.16.0.68"
+  application_network: "e3f77158-c626-4f61-8d3c-4c734baa2ecc"
+  application_ip: "192.168.0.68"
+  key_name: "art-key"
+  security_groups: "default,art-sec-rules"
+  availability_zone: "nova"

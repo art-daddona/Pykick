@@ -1,0 +1,13 @@
+###HOSTNAME##
+vboxmanage createvm --name ##HOSTNAME## --ostype ##OS_TYPE## --register
+vboxmanage storagectl ##HOSTNAME## --name scsi-controller --add scsi --controller LSILogic --hostiocache on
+vboxmanage storageattach ##HOSTNAME## --storagectl scsi-controller --port 0 --device 0 --type hdd --medium iscsi --server ##VM_ISCSI_TARGET##  --target ##VM_ISCSI_IQN## --tport ##VM_ISCSI_PORT##
+vboxmanage modifyvm ##HOSTNAME## --ioapic on
+vboxmanage modifyvm ##HOSTNAME## --cpus ##VM_CPU##
+vboxmanage modifyvm ##HOSTNAME## --vram 16
+vboxmanage modifyvm ##HOSTNAME## --memory ##VM_MEMORY##
+vboxmanage modifyvm ##HOSTNAME## --rtcuseutc on
+vboxmanage modifyvm ##HOSTNAME## --nic1 bridged --bridgeadapter1 ##VM_INTERFACE_DEVICE##  --macaddress1 ##VM_MAC##  --nicpromisc1 deny --cableconnected1 on
+vboxmanage modifyvm ##HOSTNAME## --boot1 disk --boot2 net --boot3 none --boot4 none
+vboxmanage modifyvm ##HOSTNAME## --vrde on --vrdeport ##VM_RDP_PORT##
+

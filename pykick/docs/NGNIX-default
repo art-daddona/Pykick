@@ -1,0 +1,55 @@
+#
+# Default server configuration
+#
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	root /var/www/html;
+	index index.html index.htm index.nginx-debian.html;
+	server_name _;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	location /viewer {
+                root /home/art/work_stuff/pykick/web-kickstart;
+                index index.php index.html index.htm;
+            location ~ ^/viewer/(.+\.php)$ {
+		try_files $uri $uri/ =404;
+                fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+                include fastcgi_params;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+	    }
+            location ~* ^/viewer/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$ {
+            root /home/art/work_stuff/pykick/web-kickstart;
+        }
+    }
+    location /phpmyadmin {
+        root /usr/share/;
+        index index.php index.html index.htm;
+        location ~ ^/phpmyadmin/(.+\.php)$ {
+            try_files $uri =404;
+            fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+            include fastcgi_params;
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+
+        }
+        location ~* ^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$ {
+            root /usr/share/;
+        }
+    }
+    # Server block for phppgadmin service
+    location /phppgadmin {
+            root            /usr/share/;
+            index index.php index.html index.htm;
+            location ~ ^/phppgadmin/(.+\.php)$ {
+                    try_files $uri =404;
+                    fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+                    include fastcgi_params;
+                    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                    #fastcgi_index index.php;
+            }
+        location ~* ^/phppgadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$ {
+            root /usr/share/;
+        }
+    }
+}

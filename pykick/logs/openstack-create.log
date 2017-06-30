@@ -1,0 +1,78 @@
+2017-06-16 10:09:48,918 - root - INFO - logging started
+2017-06-16 10:09:48,918 - root - INFO - get_ks_parms [LOCATION] = [TEST]
+2017-06-16 10:09:48,918 - root - INFO - get_ks_parms [IP] = [127.0.0.1]
+2017-06-16 10:09:48,918 - root - INFO - get_ks_parms [PORT] = [5432]
+2017-06-16 10:09:48,918 - root - INFO - get_ks_parms [DBLIST] = [kickerlist]
+2017-06-16 10:09:48,918 - root - INFO - get_ks_parms [DB] = [kicker]
+2017-06-16 10:09:48,918 - root - INFO - get_ks_parms [USER] = [art]
+2017-06-16 10:09:48,918 - root - INFO - get_ks_parms [PASS] = [0u8me2]
+2017-06-16 10:09:48,919 - root - INFO - get_ks_parms completed
+2017-06-16 10:09:48,927 - root - INFO - open_db completed
+2017-06-16 10:09:48,929 - root - INFO - get_global_fk completed 1
+2017-06-16 10:09:48,929 - root - INFO - global name [combo] good....so continue
+2017-06-16 10:09:48,943 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-77-heat.yaml
+2017-06-16 10:09:48,943 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-76-heat.yaml
+2017-06-16 10:09:48,943 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-73-env.yaml
+2017-06-16 10:09:48,943 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/art5-env.yaml
+2017-06-16 10:09:48,943 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-67-heat.yaml
+2017-06-16 10:09:48,943 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-68-env.yaml
+2017-06-16 10:09:48,943 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-68-heat.yaml
+2017-06-16 10:09:48,943 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-66-heat.yaml
+2017-06-16 10:09:48,943 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-69-env.yaml
+2017-06-16 10:09:48,943 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-75-env.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-72-env.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-70-env.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-78-heat.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-70-heat.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-79-env.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/art5-heat.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-73-heat.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-71-env.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-80-heat.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-77-env.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-80-env.yaml
+2017-06-16 10:09:48,944 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-65-env.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-72-heat.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-79-heat.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-69-heat.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-71-heat.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-67-env.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-78-env.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-75-heat.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-76-env.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-65-heat.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-66-env.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-74-env.yaml
+2017-06-16 10:09:48,945 - root - INFO - setup_openstack unlink /home/art/work_stuff/pykick/web-kickstart/openstack/test_svr-74-heat.yaml
+2017-06-16 10:09:48,946 - root - INFO - setup_openstack start processing server=[test_svr-74]
+2017-06-16 10:09:48,950 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,950 - root - INFO - setup_openstack start processing server=[test_svr-79]
+2017-06-16 10:09:48,951 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,952 - root - INFO - setup_openstack start processing server=[test_svr-76]
+2017-06-16 10:09:48,953 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,953 - root - INFO - setup_openstack start processing server=[test_svr-72]
+2017-06-16 10:09:48,955 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,955 - root - INFO - setup_openstack start processing server=[test_svr-71]
+2017-06-16 10:09:48,956 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,957 - root - INFO - setup_openstack start processing server=[test_svr-67]
+2017-06-16 10:09:48,958 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,958 - root - INFO - setup_openstack start processing server=[test_svr-75]
+2017-06-16 10:09:48,960 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,960 - root - INFO - setup_openstack start processing server=[test_svr-78]
+2017-06-16 10:09:48,961 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,961 - root - INFO - setup_openstack start processing server=[test_svr-70]
+2017-06-16 10:09:48,963 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,963 - root - INFO - setup_openstack start processing server=[test_svr-65]
+2017-06-16 10:09:48,965 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,965 - root - INFO - setup_openstack start processing server=[test_svr-68]
+2017-06-16 10:09:48,966 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,966 - root - INFO - setup_openstack start processing server=[test_svr-80]
+2017-06-16 10:09:48,968 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,968 - root - INFO - setup_openstack start processing server=[test_svr-73]
+2017-06-16 10:09:48,969 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,969 - root - INFO - setup_openstack start processing server=[test_svr-66]
+2017-06-16 10:09:48,971 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,971 - root - INFO - setup_openstack start processing server=[test_svr-69]
+2017-06-16 10:09:48,973 - root - INFO - setup_openstack completed
+2017-06-16 10:09:48,973 - root - INFO - setup_openstack start processing server=[test_svr-77]
+2017-06-16 10:09:48,974 - root - INFO - setup_openstack completed

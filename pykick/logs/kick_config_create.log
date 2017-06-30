@@ -1,0 +1,12 @@
+2017-06-06 11:24:08,082 - root - INFO - logging started
+2017-06-06 11:24:08,083 - root - INFO - get_ks_parms [LOCATION] = [TEST]
+2017-06-06 11:24:08,083 - root - INFO - get_ks_parms [IP] = [127.0.0.1]
+2017-06-06 11:24:08,083 - root - INFO - get_ks_parms [PORT] = [5432]
+2017-06-06 11:24:08,083 - root - INFO - get_ks_parms [DBLIST] = [kickerlist]
+2017-06-06 11:24:08,083 - root - INFO - get_ks_parms [DB] = [kicker]
+2017-06-06 11:24:08,083 - root - INFO - get_ks_parms [USER] = [art]
+2017-06-06 11:24:08,083 - root - INFO - get_ks_parms [PASS] = [0u8me2]
+2017-06-06 11:24:08,083 - root - INFO - get_ks_parms completed
+2017-06-06 11:24:08,093 - root - INFO - open_db completed
+2017-06-06 11:24:08,096 - root - INFO - get_global_fk completed 0
+2017-06-06 11:24:08,096 - root - INFO - close_db completed

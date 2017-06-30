@@ -1,0 +1,11 @@
+parameters:
+  system_name: "##HOSTNAME##"
+  image: "##OPENSTACK_IMAGE##"
+  flavor: "##OPENSTACK_FLAVOR##"
+  management_network: "##OPENSTACK_MANAGEMENT_NETWORK##"
+  management_ip: "##MANAGEMENT_IP_V4##"
+  application_network: "##OPENSTACK_APPLICATION_NETWORK##"
+  application_ip: "##APPLICATION_IP_V4##"
+  key_name: "##OPENSTACK_SSH_KEY##"
+  security_groups: "##OPENSTACK_SECURITY_GROUP##"
+  availability_zone: "##OPENSTACK_ZONE##"

@@ -1,0 +1,6 @@
+#
+default ubuntu
+label ubuntu
+    kernel ubuntu-14.04-x86_64-vmlinuz
+    append initrd=ubuntu-14.04-x86_64-vmlinuz auto=true interface=eth0 netcfg/disable_dhcp=true netcfg/confirm_static=true netcfg/get_ipaddress=172.16.0.0 netcfg/get_netmask=255.255.254.0 netcfg/get_gateway=172.16.0.1  netcfg/get_hostname=test_svr-79 netcfg/get_domain=kicker.com netcfg/get_nameservers=8.8.8.8 url=http://127.0.0.1/web-kickstart/scripts/test_svr-79-ks.cfg --
+

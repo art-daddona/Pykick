@@ -1,0 +1,6 @@
+##TOPCONSOLELINE##
+default ubuntu
+label ubuntu
+    kernel ##VMLINUZ##
+    append initrd=##INITRD## auto=true interface=##PXE_DEVICE## netcfg/disable_dhcp=true netcfg/confirm_static=true netcfg/get_ipaddress=##MANAGEMENT_IP_V4## netcfg/get_netmask=##MANAGEMENT_NETMASK_V4## netcfg/get_gateway=##MANAGEMENT_GATEWAY_V4##  netcfg/get_hostname=##HOSTNAME## netcfg/get_domain=##DOMAIN## netcfg/get_nameservers=##PXE_DNS## url=##KSFILE## --
+

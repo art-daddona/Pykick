@@ -1,0 +1,106 @@
+body {text-align:left;font: 80% arial,verdana,sans-serif}
+h1,h2,h3 {color:#993300}
+h1 {font-size:150%}
+h2 {font-size:135%}
+h2 {font-size:120%}
+.menu {text-align:left;font: 100% arial,verdana,sans-serif;font-weight:bold;}
+.morelink,.footer {text-align:right;font: 65% arial,verdana,sans-serif}
+.morelink {color:#993300}
+.footer {color:#000000}
+.byline {text-align:left;font: 100% arial,verdana,sans-serif;font-weight:bold;}
+.rack_physical_num
+{
+	font-family: verdana, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	color: white;
+	border-color: black;
+	background-color: #444;
+	padding: 1px 2px;
+	height: 17px;
+}
+.rack_physical_dev
+{
+	font-family: verdana, sans-serif;	
+	font-size: 12px;
+	background-color: #DDD;
+	width: 220px;
+	padding: 1px 3px;	
+}
+.rack_physical_dev_wide
+{
+	font-family: verdana, sans-serif;	
+	font-size: 12px;
+	background-color: #DDD;
+	width: 700px;
+	padding: 1px 3px;	
+}
+.rack_physical_selected
+{
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	background-color: #F90;
+	width: 220px;
+	padding: 1px 3px;	
+}
+.rack_physical_selected_wide
+{
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	background-color: #F90;
+	width: 700px;
+	padding: 1px 3px;	
+}
+.rack_physical_empty
+{
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	background-color: white;
+	width: 220px;
+	padding: 1px 3px;	
+}
+.rack_physical_empty_wide
+{
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	background-color: white;
+	width: 700px;
+	padding: 1px 3px;	
+}
+.rack_physical
+{
+	float: left;
+	border-spacing: 0px;
+	border-width: 1px;
+	border-collapse: collapse;
+	margin: 8px 8px 8px 0px;
+}
+td
+{
+	border: solid;
+	border-width: 1px;
+	padding: 3px 4px;
+	background: transparent;
+}
+th.rack_header
+{
+	padding-left: 4px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: left;
+	background: #444;
+	color: #FFF;
+	border: solid 1px #000;
+	padding: 2px;
+	text-align: center;
+}
+a.rack_header
+{
+	text-decoration: none;
+	font-size: small;
+	color: white;
+}
+a.racklayout
+{
+	text-decoration: none;
+}

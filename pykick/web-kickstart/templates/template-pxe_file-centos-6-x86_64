@@ -1,0 +1,5 @@
+##TOPCONSOLELINE##
+default linux
+label linux
+    kernel ##VMLINUZ##
+    append pci=bfsort ksdevice=##PXE_MAC## ##CONSOLELINE## initrd=##INITRD## network ip=dhcp ks=##KSFILE##

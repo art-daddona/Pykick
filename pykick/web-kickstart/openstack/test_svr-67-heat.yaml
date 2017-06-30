@@ -1,0 +1,149 @@
+heat_template_version: 2014-10-16
+
+description: >
+  NAS Server
+
+parameters:
+  system_name:
+    type: string
+    description: System name
+  image:
+    type: string
+    description: ubuntu image
+  flavor:
+    type: string
+    description: Server flavor
+    constraints:
+      - custom_constraint: nova.flavor
+  management_network:
+    type: string
+    description: Management network id
+    constraints:
+    - custom_constraint: neutron.network
+  management_ip:
+    type: string
+    description: Management ip
+  application_network:
+    type: string
+    description: Application network id
+    constraints:
+    - custom_constraint: neutron.network
+  application_ip:
+    type: string
+    description: Application ip
+  key_name:
+    type: string
+    description: Keypair name
+  security_groups:
+    type: comma_delimited_list
+    description: security groups
+  availability_zone:
+    type: string
+    description: avaialibity zones
+
+resources:
+
+  management_port:
+    type: OS::Neutron::Port
+    properties:
+      name:
+        str_replace:
+          template: $SERVER_NAME-management-port
+          params:
+            $SERVER_NAME: { get_param: server_name }
+      network_id: { get_param: management_network }
+      fixed_ips: [{ip_address: { get_param: management_ip } },]
+      security_groups: {get_param: security_groups}
+
+  application_port:
+    type: OS::Neutron::Port
+    properties:
+      name:
+        str_replace:
+          template: $SERVER_NAME-application-port
+          params:
+            $SERVER_NAME: { get_param: server_name }
+      network_id: { get_param: application_network }
+      fixed_ips: [{ip_address: { get_param: application_ip } },]
+      security_groups: {get_param: security_groups}
+
+  boot_volume:
+    type: OS::Cinder::Volume
+    properties:
+      size: 35
+      name: 
+        str_replace:
+          template: $SERVER_NAME-boot-volume
+          params:
+            $SERVER_NAME: { get_param: server_name }
+      image: { get_param: image }
+      availability_zone: {get_param: availability_zone}
+
+  data_volume:
+    type: OS::Cinder::Volume
+    properties:
+      size: 500
+      name:
+        str_replace:
+          template: $SERVER_NAME-data-volume
+          params:
+            $SERVER_NAME: { get_param: server_name }
+      availability_zone: {get_param: availability_zone}
+
+  server_cloud_config:
+     type: OS::Heat::SoftwareConfig
+     properties:
+        group: ungrouped
+        config: |
+          #cloud-config
+          password: art4all
+          chpasswd: { expire: False }
+          ssh_pwauth: True
+          manage_etc_hosts: false
+
+  server_bash_config:
+     type: OS::Heat::SoftwareConfig
+     properties:
+        group: ungrouped
+        config: | 
+          #!/bin/bash -x
+          touch /var/tmp/ansible-ready
+
+  server_init:
+    type: OS::Heat::MultipartMime
+    properties:
+      parts:
+      - config: {get_resource: server_cloud_config}
+      - config: {get_resource: server_bash_config}         
+
+  server:
+    type: OS::Nova::Server
+    properties:
+      name:
+        str_replace:
+          template: $SERVER_NAME
+          params:
+            $ASERVER_NAMEIC_VM_CODE: { get_param: server_name }
+      block_device_mapping:
+        - device_name: vda
+          volume_id: { get_resource: boot_volume }
+          delete_on_termination: false
+        - device_name: vdb
+          volume_id: { get_resource: data_volume }
+          delete_on_termination: false
+      flavor: { get_param: flavor }
+      key_name: { get_param: key_name }
+      availability_zone: {get_param: availability_zone}
+      admin_user: art
+      user_data_format: RAW
+      user_data: {get_resource: server_init}
+      networks:
+        - port: { get_resource: management_port }
+        - port: { get_resource: application_port }
+outputs:
+  management_ip:
+    description: Management IP address
+    value: { get_attr: [management_port, fixed_ips, 0, ip_address] }
+  application_ip:
+    description: Application IP address
+    value: { get_attr: [application_port, fixed_ips, 0, ip_address] }

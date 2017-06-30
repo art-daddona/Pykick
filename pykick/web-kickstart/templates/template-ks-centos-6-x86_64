@@ -1,0 +1,32 @@
+install
+url --url=http://##HTTP_IP##/##HTTP_TOP##/os/##OS_VERSION##
+skipx
+reboot
+bootloader --location=mbr
+text
+zerombr
+selinux --disabled
+network --hostname ##HOSTNAME## --device ##PXE_DEVICE## --bootproto static --ip ##MANAGEMENT_IP_V4## --netmask ##MANAGEMENT_NETMASK_V4## --gateway ##MANAGEMENT_GATEWAY_V4## --nameserver ##PXE_DNS##
+lang en_US
+keyboard ##KEYBOARD##
+timezone ##TIMEZONE##
+firewall --disabled
+authconfig --enableshadow --enablemd5
+rootpw ##ROOT_PW##
+key --skip
+clearpart --all
+part / --fstype ext4 --size 2000 --grow --asprimary --label=ROOT --ondisk=##DRIVE##
+part swap --size=##SWAPSIZE## --ondisk=##DRIVE##
+%packages
+@ legacy-unix
+@ network-file-system-client
+@ network-tools
+@ system-admin-tools
+@ system-management
+@ system-management-snmp
+@ web-server
+grub
+kernel-headers
+%end
+%post
+echo "Temporary message of the day from kickstart" > /etc/motd

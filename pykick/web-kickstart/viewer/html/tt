@@ -1,0 +1,47 @@
+    include("../config/config.inc.php");
+    for($i = 0;$i < $total_vm_hosts;$i++)
+    {
+        $vm_host = $db_vm_info[$i]['VM_HOST'];
+        $vm_count = 0;
+        echo "<table class = \"rack_physical\" border=1>\n";
+        echo "<tr><th class=\"rack_header\" colspan=3>\n";
+        echo "VM  HOST: $vm_host</th></tr>\n";
+        $rack_layout = array();
+        $system_info = array();
+        $pgsqldb = new pgsql($dbhost,$dbname,$dbuser,$dbpass);
+        $pgsqldb->connect();
+        $pgsqldb->query("SELECT server_fk FROM vm_info WHERE global_fk = $gkey AND vm_host = '$vm_host'");
+        $row_count = $pgsqldb->numRows();
+        for($j = 1;$j < $row_count;$j++)
+        {
+            $rack_layout[$j] = 'empty';
+        }
+        $unit = 1;
+        while($rowin = $pgsqldb->fetchObject())
+        {
+            $server_fk = $rowin->server_fk;
+            $hostname = get_hostname($gkey,$server_fk);
+            $rack_layout[$unit] = $hostname;
+            $system_info[$hostname]['SERVER_FK'] = $server_fk;
+            $unit++;
+        }
+        for($l = $row_count;$l > 0;$l--)
+        {
+            echo "<tr><td class=\"rack_physical_num\">$l</td>\n";
+            $hostname = $rack_layout[$l];
+            $rowspan = 1;
+            $server_fk = $system_info[$hostname]['SERVER_FK'];
+            echo "<td rowspan=$rowspan class=\"rack_physical_dev\">\n";
+            echo "<span style=\"vertical-align: middle\">\n";
+            if($hostname == 'empty')
+            {
+                echo "<a class=\"racklayout\" title=\"View details for $rack_layout[$l]\" <strong>$rack_layout[$l]</strong></a></td></tr>\n";
+            }
+            else
+            {
+                echo "<a class=\"racklayout\" title=\"View details for $rack_layout[$l]\" href=\"$url/html/detail_view.php?hostname=$hostname&skey=$server_fk&gkey=$gkey\" <strong>$rack_layout[$l]</strong></a></td></tr>\n";
+            }
+        }
+        echo "</table>\n";
+        echo "<br>\n";
+    }

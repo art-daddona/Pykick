@@ -1,0 +1,66 @@
+2017-06-16 10:09:34,041 - root - INFO - logging started
+2017-06-16 10:09:34,042 - root - INFO - get_ks_parms [LOCATION] = [TEST]
+2017-06-16 10:09:34,042 - root - INFO - get_ks_parms [IP] = [127.0.0.1]
+2017-06-16 10:09:34,042 - root - INFO - get_ks_parms [PORT] = [5432]
+2017-06-16 10:09:34,042 - root - INFO - get_ks_parms [DBLIST] = [kickerlist]
+2017-06-16 10:09:34,042 - root - INFO - get_ks_parms [DB] = [kicker]
+2017-06-16 10:09:34,042 - root - INFO - get_ks_parms [USER] = [art]
+2017-06-16 10:09:34,042 - root - INFO - get_ks_parms [PASS] = [0u8me2]
+2017-06-16 10:09:34,042 - root - INFO - get_ks_parms completed
+2017-06-16 10:09:34,051 - root - INFO - open_db completed
+2017-06-16 10:09:34,053 - root - INFO - get_global_fk completed 1
+2017-06-16 10:09:34,053 - root - INFO - global name [combo] good....so continue
+2017-06-16 10:09:34,068 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-20-vm-iscsi.vbox
+2017-06-16 10:09:34,068 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-43-vm-iscsi.vbox
+2017-06-16 10:09:34,068 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-62-vm-iscsi.vbox
+2017-06-16 10:09:34,068 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-18-vm-iscsi.vbox
+2017-06-16 10:09:34,068 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-40-vm-iscsi.vbox
+2017-06-16 10:09:34,068 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-41-vm-iscsi.vbox
+2017-06-16 10:09:34,068 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-59-vm-iscsi.vbox
+2017-06-16 10:09:34,069 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-28-vm-iscsi.vbox
+2017-06-16 10:09:34,069 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-27-vm-iscsi.vbox
+2017-06-16 10:09:34,069 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-16-vm-iscsi.vbox
+2017-06-16 10:09:34,069 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-32-vm-iscsi.vbox
+2017-06-16 10:09:34,069 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-42-vm-iscsi.vbox
+2017-06-16 10:09:34,069 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-53-vm-iscsi.vbox
+2017-06-16 10:09:34,069 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-26-vm-iscsi.vbox
+2017-06-16 10:09:34,069 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-12-vm-iscsi.vbox
+2017-06-16 10:09:34,069 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-35-vm-iscsi.vbox
+2017-06-16 10:09:34,069 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-47-vm-iscsi.vbox
+2017-06-16 10:09:34,070 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-33-vm-iscsi.vbox
+2017-06-16 10:09:34,070 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-22-vm-iscsi.vbox
+2017-06-16 10:09:34,070 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-37-vm-iscsi.vbox
+2017-06-16 10:09:34,070 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-36-vm-iscsi.vbox
+2017-06-16 10:09:34,070 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-57-vm-iscsi.vbox
+2017-06-16 10:09:34,070 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-50-vm-iscsi.vbox
+2017-06-16 10:09:34,070 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-60-vm-iscsi.vbox
+2017-06-16 10:09:34,070 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-49-vm-iscsi.vbox
+2017-06-16 10:09:34,070 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-25-vm-iscsi.vbox
+2017-06-16 10:09:34,070 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-51-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-58-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-24-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-61-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-23-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-45-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-38-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-52-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-63-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-11-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-39-vm-iscsi.vbox
+2017-06-16 10:09:34,071 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-44-vm-iscsi.vbox
+2017-06-16 10:09:34,072 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-14-vm-iscsi.vbox
+2017-06-16 10:09:34,072 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-55-vm-iscsi.vbox
+2017-06-16 10:09:34,072 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-21-vm-iscsi.vbox
+2017-06-16 10:09:34,072 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-30-vm-iscsi.vbox
+2017-06-16 10:09:34,072 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-17-vm-iscsi.vbox
+2017-06-16 10:09:34,072 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-29-vm-iscsi.vbox
+2017-06-16 10:09:34,072 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-31-vm-iscsi.vbox
+2017-06-16 10:09:34,072 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-48-vm-iscsi.vbox
+2017-06-16 10:09:34,072 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-34-vm-iscsi.vbox
+2017-06-16 10:09:34,072 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-56-vm-iscsi.vbox
+2017-06-16 10:09:34,073 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-13-vm-iscsi.vbox
+2017-06-16 10:09:34,073 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-46-vm-iscsi.vbox
+2017-06-16 10:09:34,073 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-54-vm-iscsi.vbox
+2017-06-16 10:09:34,073 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-15-vm-iscsi.vbox
+2017-06-16 10:09:34,073 - root - INFO - setup_vbox unlink /home/art/work_stuff/pykick/web-kickstart/vm/test_svr-19-vm-iscsi.vbox
+2017-06-16 10:09:34,073 - root - INFO - setup_servers completed

@@ -1,0 +1,15 @@
+1.	install ubuntu 16.04 
+2.	install postgresql server, ngnix, php7.0-fpm, phppgadmin, dkms 
+3.	wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+4.	echo "deb http://download.virtualbox.org/virtualbox/debian xenial contrib" >> /etc/apt/sources.list
+5.	sudo pt update;sudo apt install virtualbox-5.1
+6.	moduser -G vboxusers <USERNAME>
+7.      mkdir /home/<USERNAME>/Downloads;cd /home/<USERNAME>/Downloads
+8.	wget wget http://download.virtualbox.org/virtualbox/5.1.22/Oracle_VM_VirtualBox_Extension_Pack-5.1.22-115126.vbox-extpack
+9.	sudo vboxmanage extpack install  Oracle_VM_VirtualBox_Extension_Pack-5.1.22-115126.vbox-extpack
+10.	mkdir /opt/VMs;chmnod 0755 /opt/VMs;chown -R <USERNAME>:vboxusers /opt/VMS
+11.	vboxmanage setproperty machinefolder /opt/VMs
+12.	vboxmanage list systemproperties
+
+
+
