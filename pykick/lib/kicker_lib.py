@@ -976,7 +976,7 @@ def setup_servers(global_info,network_info,server_info,ks_parms):
             if re.search('##VMLINUZ##',line):
                 line = re.sub('##VMLINUZ##',vmlinuz,line)
             if re.search('##INITRD##',line):
-                line = re.sub('##INITRD##',vmlinuz,line)
+                line = re.sub('##INITRD##',initrd,line)
             if re.search('##MANAGEMENT_IP_V4##',line):
                 line = re.sub('##MANAGEMENT_IP_V4##',server_info[server]['MANAGEMENT_IP_V4'],line)
             if re.search('##MANAGEMENT_NETMASK_V4##',line):
